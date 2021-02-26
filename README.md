@@ -28,3 +28,4 @@ sudo apt update && sudo apt upgrade -y
 # installing pip
 sudo apt install python-pip python3-pip
 ```
+4) To install multiple version of CUDA and CUDNN, follow this [guide](https://towardsdatascience.com/installing-multiple-cuda-cudnn-versions-in-ubuntu-fcb6aa5194e2) 
