@@ -29,3 +29,10 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install python-pip python3-pip
 ```
 4) To install multiple version of CUDA and CUDNN, follow this [guide](https://towardsdatascience.com/installing-multiple-cuda-cudnn-versions-in-ubuntu-fcb6aa5194e2) 
+
+# ISSUES
+1) Compilation with `CUDA_ARCH_BIN`, ref: [link](https://arnon.dk/matching-sm-architectures-arch-and-gencode-for-various-nvidia-cards/).
+```
+RTX 3080 (laptop) has CUDA_ARCH_BIN 8.6 (?) which is only supported from CUDA 11.1
+```
+This will be the problem when we want to compile OpenCV with CUDA => We need CUDA 11.1.
