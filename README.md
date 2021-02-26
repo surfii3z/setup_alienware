@@ -30,6 +30,17 @@ sudo apt install python-pip python3-pip
 ```
 4) To install multiple version of CUDA and CUDNN, follow this [guide](https://towardsdatascience.com/installing-multiple-cuda-cudnn-versions-in-ubuntu-fcb6aa5194e2) 
 
+# Performance
+1) Tried with [packnet_sfm_ros](https://github.com/surfii3z/packnet_sfm_ros)
+```
+DGX-station @ Tesla V100
+    work at 12 Hz
+    work at 16 Hz (with TensorRT)
+
+Alienware M15 R3(?) @ RTX 3080
+    work at 10.5 Hz
+```
+
 # ISSUES
 1) Compilation with `CUDA_ARCH_BIN`, ref: [link](https://arnon.dk/matching-sm-architectures-arch-and-gencode-for-various-nvidia-cards/).
 ```
