@@ -47,3 +47,7 @@ Alienware M15 R3(?) @ RTX 3080
 RTX 3080 (laptop) has CUDA_ARCH_BIN 8.6 (?) which is only supported from CUDA 11.1
 ```
 This will be the problem when we want to compile OpenCV with CUDA => We need CUDA 11.1.
+
+2) Ethernet Controller doesn't have driver in linux kernel < 5.8
+    - check the hardware driver following
+    `https://linux-hardware.org/?view=howto`
