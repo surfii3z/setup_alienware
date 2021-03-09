@@ -18,6 +18,7 @@ NVIDIA RTX 3080
 2) If ubuntu cannot be booted up, try following [Black/purple screen after you boot Ubuntu for the first time](https://askubuntu.com/questions/162075/my-computer-boots-to-a-black-screen-what-options-do-i-have-to-fix-it)
 3) check the hardware driver following, as we might need to update linux kernal to use the driver for hardware (e.g. ubuntu 18.04 LTS comes with kernal 5.4 which doesn't have driver for ethernet card of alienware m15 r4)
     `https://linux-hardware.org/?view=howto`
+    - I installed linux kernal 5.8 using this [link](https://ubuntuhandbook.org/index.php/2020/08/install-linux-kernel-5-8-ubuntu/)
 4) After booting up, one will see the screen with bad resolution. That's normal because the graphic driver has not yet been installed. Try following [4. Install Official Nvidia Driver](https://www.itzgeek.com/post/how-to-install-nvidia-drivers-on-ubuntu-20-04-ubuntu-18-04.html) and it should work.
     - Note that I tried 1), 2) methods on Ubuntu 18.04 but it ends up cannot be booted. Only the 4) method works.
     - If the resolution went bad again, it maybe because the driver went wrong again. So try step 2) and step 3) again then the problem should solve.
