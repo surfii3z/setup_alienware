@@ -51,6 +51,17 @@ RTX 3080 (laptop) has CUDA_ARCH_BIN 8.6 (?) which is only supported from CUDA 11
 ```
 This will be the problem when we want to compile OpenCV with CUDA => We need CUDA 11.1.
 
-2) Ethernet Controller doesn't have driver in linux kernel < 5.8
+2) Ethernet Controller doesn't have driver in linux kernel < 5.8    
+    - If you use the following command
+    ```bash
+    lshw -c network
+    ```
+    It will show something like
+    ```
+      *-network UNCLAIMED            
+       description: Ethernet interface
+       ...
+    ```
+    
     - check the hardware driver following
     `https://linux-hardware.org/?view=howto`
