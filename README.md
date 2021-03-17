@@ -34,14 +34,15 @@ sudo apt install python-pip python3-pip
 4) To install multiple version of CUDA and CUDNN, follow this [guide](https://towardsdatascience.com/installing-multiple-cuda-cudnn-versions-in-ubuntu-fcb6aa5194e2) 
     - HOWEVER, in the last step DON'T DO
  
-```bash
-# DON'T do this, because it will break the driver
-sudo apt install cuda
-```
+    ```bash
+    sudo apt install cuda   # DON'T do this, because it will break the driver
+    ```
+
     - DO this
-```bash
-sudo apt install cudatoolkit-M-m    # M is major version, m is minor version
-```
+    
+    ```bash
+    sudo apt install cudatoolkit-M-m    # M is major version, m is minor version
+    ```
 
 # Performance
 1) Tried with [packnet_sfm_ros](https://github.com/surfii3z/packnet_sfm_ros)
