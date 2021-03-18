@@ -13,17 +13,17 @@ NVIDIA RTX 3080
     - I select `drive 0`, for example.
 
 # Ubuntu
-1) Install ubuntu following this [guide](https://itsfoss.com/install-ubuntu-1404-dual-boot-mode-windows-8-81-uefi/)
+1) [Ubuntu Installation] Install ubuntu following this [guide](https://itsfoss.com/install-ubuntu-1404-dual-boot-mode-windows-8-81-uefi/)
     - Note that when installing, don't check downloading the third party software because it will install the wrong NVIDIA driver.
-2) If ubuntu cannot be booted up, try following [Black/purple screen after you boot Ubuntu for the first time](https://askubuntu.com/questions/162075/my-computer-boots-to-a-black-screen-what-options-do-i-have-to-fix-it)
-3) check the hardware driver following, as we might need to update linux kernal to use the driver for hardware (e.g. ubuntu 18.04 LTS comes with kernal 5.4 which doesn't have driver for ethernet card of alienware m15 r4)
+2) [Boot-up issue] If ubuntu cannot be booted up, try following [Black/purple screen after you boot Ubuntu for the first time](https://askubuntu.com/questions/162075/my-computer-boots-to-a-black-screen-what-options-do-i-have-to-fix-it) section.
+3) [Ethernet Driver] check the hardware driver following, as we might need to update linux kernal to use the driver for hardware (e.g. ubuntu 18.04 LTS comes with kernal 5.4 which doesn't have driver for ethernet card of alienware m15 r4)
     `https://linux-hardware.org/?view=howto`
     - I installed linux kernal 5.8 using this [link](https://ubuntuhandbook.org/index.php/2020/08/install-linux-kernel-5-8-ubuntu/)
-4) After booting up, one will see the screen with bad resolution. That's normal because the graphic driver has not yet been installed. Try following [4. Install Official Nvidia Driver](https://www.itzgeek.com/post/how-to-install-nvidia-drivers-on-ubuntu-20-04-ubuntu-18-04.html) and it should work.
+4) [NVIDIA Driver] After booting up, one will see the screen with bad resolution. That's normal because the graphic driver has not yet been installed. Try following [4. Install Official Nvidia Driver](https://www.itzgeek.com/post/how-to-install-nvidia-drivers-on-ubuntu-20-04-ubuntu-18-04.html) and it should work.
     - Note that I tried 1), 2) methods on Ubuntu 18.04 but it ends up cannot be booted. Only the 4) method works.
     - If the resolution went bad again, it maybe because the driver went wrong again. So try step 2) and step 3) again then the problem should solve.
 
-## Ubuntu 18.04 starter pack
+5) [Update Ubuntu] Ubuntu 18.04 starter pack
 ```bash
 # Update the software
 sudo apt update && sudo apt upgrade -y
@@ -31,7 +31,7 @@ sudo apt update && sudo apt upgrade -y
 # installing pip
 sudo apt install python-pip python3-pip
 ```
-4) To install multiple version of CUDA and CUDNN, follow this [guide](https://towardsdatascience.com/installing-multiple-cuda-cudnn-versions-in-ubuntu-fcb6aa5194e2) 
+6) [CUDA and CuDNN] To install multiple version of CUDA and CUDNN, follow this [guide](https://towardsdatascience.com/installing-multiple-cuda-cudnn-versions-in-ubuntu-fcb6aa5194e2) 
     - HOWEVER, in the last step DON'T DO
  
     ```bash
